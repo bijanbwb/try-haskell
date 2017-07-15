@@ -3,6 +3,7 @@
 ## Books
 
 - [ ] [Haskell Programming from First Principles](http://haskellbook.com/)
+- Haskell: The Craft of Functional Programming
 - Programming in Haskell
 - Real World Haskell
 - All About Monads
