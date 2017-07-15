@@ -1,4 +1,4 @@
--- sayHello.hs
+-- test.hs
 --
 -- First example from the Haskell Programming book.
 -- Run from the command line with the following:
