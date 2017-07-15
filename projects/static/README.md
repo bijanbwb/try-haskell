@@ -1,5 +1,7 @@
 # Orlando Haskell Static Site
 
+![Orlando Haskell](images/sample-static-site.png)
+
 ## Prerequisites
 
 - Haskell Platform
