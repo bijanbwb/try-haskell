@@ -1,0 +1,26 @@
+-- print.hs
+--
+-- Hello World example from Haskell Book.
+--
+-- $ stack ghci
+-- > :load print.hs
+-- > main
+-- "hello world!"
+
+module Print where
+
+myGreeting :: String
+myGreeting = "hello" ++ " world!"
+
+hello :: String
+hello = "hello"
+
+world :: String
+world = "world!"
+
+main :: IO ()
+main = do
+  putStrLn myGreeting
+  putStrLn secondGreeting
+  where secondGreeting = concat [hello, " ", world]
+
