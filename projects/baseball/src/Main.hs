@@ -6,7 +6,7 @@ import Data.Csv
 
 -- TYPES
 
-type BaseballStats = (BL.ByteString, Int, BL.Bytestring, Int)
+type BaseballStats = (BL.ByteString, Int, BL.ByteString, Int)
 
 -- MAIN
 
