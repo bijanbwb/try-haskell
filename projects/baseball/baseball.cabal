@@ -1,8 +1,8 @@
 name:                baseball
 version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/baseball#readme
+synopsis:            CSV parser example.
+description:         Baseball data analysis.
+homepage:            https://github.com/bijanbwb/try-haskell/projects/baseball
 license:             BSD3
 license-file:        LICENSE
 author:              Author name here
@@ -14,7 +14,11 @@ cabal-version:       >=1.10
 extra-source-files:  README.md
 
 executable baseball
+  ghc-options:         -Wall
   hs-source-dirs:      src
   main-is:             Main.hs
   default-language:    Haskell2010
-  build-depends:       base >= 4.7 && < 5
+  build-depends:       base >= 4.7 && < 5,
+                       bytestring,
+                       vector,
+                       cassava
