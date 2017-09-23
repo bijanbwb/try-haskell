@@ -47,3 +47,8 @@ filtery pred (x:xs)
 mappy :: (a -> b) -> [a] -> [b]
 mappy _ [] = []
 mappy f (x:xs) = f x : mappy f xs
+
+-- Recursively reverse a list.
+reversify :: [a] -> [a]
+reversify [] = []
+reversify (x:xs) = reversify xs ++ [x]
