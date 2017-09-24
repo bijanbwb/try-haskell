@@ -40,8 +40,8 @@ lengthy (x:xs) = 1 + length xs
 filtery :: (a -> Bool) -> [a] -> [a]
 filtery pred [] = []
 filtery pred (x:xs)
-    | pred x = x : filtery pred xs
-    | otherwise = filtery pred xs
+  | pred x = x : filtery pred xs
+  | otherwise = filtery pred xs
 
 -- Recursively map through a list.
 mappy :: (a -> b) -> [a] -> [b]
@@ -52,3 +52,11 @@ mappy f (x:xs) = f x : mappy f xs
 reversify :: [a] -> [a]
 reversify [] = []
 reversify (x:xs) = reversify xs ++ [x]
+
+-- Recursively sort a list.
+sortify :: (Ord a) => [a] -> [a]
+sortify [] = []
+sortify (x:xs) =
+  sortify (filter (<= x) xs)
+  ++ [x] ++
+  sortify (filter (> x) xs)
