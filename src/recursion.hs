@@ -60,3 +60,21 @@ sortify (x:xs) =
   sortify (filter (<= x) xs)
   ++ [x] ++
   sortify (filter (> x) xs)
+
+{-
+  Converted quicksort example to JavaScript for practice.
+
+  var sortify = function(list) {
+
+    if (list.length === 0) {
+      return [];
+    } else {
+      let start = sortify(list.filter(x => x < list[0]));
+      let middle = list[0];
+      let end = sortify(list.filter(x => x > list[0]));
+      return start.concat(middle).concat(end);
+    }
+
+  };
+-}
+
